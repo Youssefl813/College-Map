@@ -68,6 +68,8 @@
         };
         L.control.layers(baseMaps, overlayMaps).addTo(mymap);
 	    
+	L.control.mousePosition().addTo(mymap);
+	    
 	mymap.addControl(new L.Control.Fullscreen());
 	
     </script>
