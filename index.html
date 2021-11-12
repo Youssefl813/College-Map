@@ -40,8 +40,7 @@
 	    attribution: 'LiDAR 1m DSM Environment Agency OGL &copy; Crown Copyright 2021'
         });	    
       
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-	  	attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+	    
     
 	var marker = L.marker([51.12983, -2.73341]).addTo(mymap);
 	marker.bindPopup("<img style='width: 200px' src='ITandComputers.jpg'><p><b>C Block</b></p><br>T-Level Digital");
@@ -56,6 +55,8 @@
 	    
 	var marker3 = L.marker([51.043841, -2.819460]).addTo(mymap);
 	marker3.bindPopup("<img style='width: 200px' src='adam.jpg'><p><b>Adams House</b></p><br>adamjone");
+	    
+	var college = L.layerGroup([marker, marker1]).addTo(mymap);    
 	    
 	var baseMaps = {
            "OSM": osm,
